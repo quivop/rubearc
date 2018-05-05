@@ -1,24 +1,29 @@
-# README
+# RubyArc
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Based loosely off the sample application from [this Rails tutorial](http://www.railstutorial.org/).
 
-Things you may want to cover:
+## Getting started
 
-* Ruby version
+Clone the repo to your computer and then install the needed gems:
 
-* System dependencies
+```
+$ bundle install --without production
+```
 
-* Configuration
+Next, migrate the database:
 
-* Database creation
+```
+$ rails db:migrate
+```
 
-* Database initialization
+Finally, run the test suite to make sure everything is working correctly:
 
-* How to run the test suite
+```
+$ rails test
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+If the test suite passes, you'll be ready to run the app on the local development server:
 
-* Deployment instructions
-
-* ...
+```
+$ rails server
+```
